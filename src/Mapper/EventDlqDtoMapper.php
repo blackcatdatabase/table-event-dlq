@@ -17,7 +17,7 @@ use BlackCat\Database\Support\DtoHydrator;
 final class EventDlqDtoMapper
 {
     /** @var array<string,string> Column -> DTO property */
-    private const COL_TO_PROP = [ 'event_key' => 'eventKey', 'first_failed_at' => 'firstFailedAt', 'last_failed_at' => 'lastFailedAt' ];
+    private const COL_TO_PROP = [ 'id' => 'id', 'source' => 'source', 'event_key' => 'eventKey', 'event' => 'event', 'error' => 'error', 'retryable' => 'retryable', 'attempts' => 'attempts', 'first_failed_at' => 'firstFailedAt', 'last_failed_at' => 'lastFailedAt' ];
 
     /** @var string[] */
     private const BOOL_COLS   = [ 'retryable' ];

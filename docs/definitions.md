@@ -12,7 +12,7 @@ Dead-letter queue holding events that failed permanently.
 | first_failed_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Timestamp of the first failure. |
 | id | BIGINT | NO |  | Surrogate primary key. |
 | last_failed_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Timestamp of the latest failure. |
-| retryable | BOOLEAN | NO | FALSE | Whether the event can be retried safely. |
+| retryable | BOOLEAN | NO | mysql: 0 / postgres: FALSE | Whether the event can be retried safely. |
 | source | VARCHAR(100) | NO |  | Event source or producer system. |
 
 ## Engine Details
@@ -36,5 +36,5 @@ Indexes:
 ## Views
 | View | Engine | Flags | File |
 | --- | --- | --- | --- |
-| vw_event_dlq | mysql | algorithm=MERGE, security=INVOKER | [schema\040_views.mysql.sql](schema\040_views.mysql.sql) |
-| vw_event_dlq | postgres |  | [schema\040_views.postgres.sql](schema\040_views.postgres.sql) |
+| vw_event_dlq | mysql | algorithm=MERGE, security=INVOKER | [../schema/040_views.mysql.sql](../schema/040_views.mysql.sql) |
+| vw_event_dlq | postgres |  | [../schema/040_views.postgres.sql](../schema/040_views.postgres.sql) |

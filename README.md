@@ -81,10 +81,10 @@ _No foreign keys declared in docs/definitions.md (inbound or outbound)._
 _No engine differences detected._
 
 ## Constraints Snapshot
-- `first_failed_at` – default=CURRENT_TIMESTAMP(6)
 - `attempts` – default=0
-- `retryable` – default=mysql: 0 / postgres: FALSE
+- `first_failed_at` – default=CURRENT_TIMESTAMP(6)
 - `last_failed_at` – default=CURRENT_TIMESTAMP(6)
+- `retryable` – default=mysql: 0 / postgres: FALSE
 
 ## Schema Files
 | File | Engine |

@@ -17,7 +17,7 @@
 | What | Link | Notes |
 | --- | --- | --- |
 | Schema map | [schema-map-postgres.yaml](https://github.com/blackcatacademy/blackcat-database/blob/main/scripts/schema/schema-map-postgres.yaml) | Source for table metadata |
-| Pkg folder | [packages\event-dlq](https://github.com/blackcatacademy/blackcat-database/blob/main/packages\event-dlq) | Repo location |
+| Pkg folder | [packages\event-dlq](https://github.com/blackcatacademy/blackcat-database/blob/main/packages/event-dlq) | Repo location |
 | Definitions | [docs/definitions.md](docs/definitions.md) | Column/index/FK docs |
 | Engine differences | [docs/definitions.md#engine-differences](docs/definitions.md#engine-differences) | Drift section in definitions |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | Recent changes |
@@ -81,10 +81,10 @@ _No foreign keys declared in docs/definitions.md (inbound or outbound)._
 _No engine differences detected._
 
 ## Constraints Snapshot
-- `attempts` – default=0
 - `first_failed_at` – default=CURRENT_TIMESTAMP(6)
-- `last_failed_at` – default=CURRENT_TIMESTAMP(6)
+- `attempts` – default=0
 - `retryable` – default=mysql: 0 / postgres: FALSE
+- `last_failed_at` – default=CURRENT_TIMESTAMP(6)
 
 ## Schema Files
 | File | Engine |

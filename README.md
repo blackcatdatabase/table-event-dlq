@@ -84,7 +84,7 @@ _No engine differences detected._
 - `attempts` – default=0
 - `first_failed_at` – default=CURRENT_TIMESTAMP(6)
 - `last_failed_at` – default=CURRENT_TIMESTAMP(6)
-- `retryable` – default=0
+- `retryable` – default=FALSE
 
 ## Schema Files
 | File | Engine |

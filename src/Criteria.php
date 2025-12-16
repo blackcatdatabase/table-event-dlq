@@ -41,11 +41,11 @@ final class Criteria extends BaseCriteria
         return [ 'source', 'event_key', 'error' ];
     }
 
-/** Columns allowed in ORDER BY (falls back to filterable() when empty). */
-protected function sortable(): array
-{
-    return [ 'id', 'source', 'event_key', 'error', 'retryable', 'attempts', 'first_failed_at', 'last_failed_at' ];
-}
+    /** Columns allowed in ORDER BY (falls back to filterable() when empty). */
+    protected function sortable(): array
+    {
+        return [ 'id', 'source', 'event_key', 'error', 'retryable', 'attempts', 'first_failed_at', 'last_failed_at' ];
+    }
 
     /**
      * Whitelist of joinable entities (for safe ->join() usage):

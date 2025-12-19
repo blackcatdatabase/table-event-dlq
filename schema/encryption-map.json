@@ -1,0 +1,35 @@
+{
+  "tables": {
+    "event_dlq": {
+      "columns": {
+        "attempts": {
+          "strategy": "passthrough"
+        },
+        "error": {
+          "strategy": "passthrough"
+        },
+        "event": {
+          "strategy": "passthrough"
+        },
+        "event_key": {
+          "strategy": "passthrough"
+        },
+        "first_failed_at": {
+          "strategy": "passthrough"
+        },
+        "id": {
+          "strategy": "passthrough"
+        },
+        "last_failed_at": {
+          "strategy": "passthrough"
+        },
+        "retryable": {
+          "strategy": "passthrough"
+        },
+        "source": {
+          "strategy": "passthrough"
+        }
+      }
+    }
+  }
+}
